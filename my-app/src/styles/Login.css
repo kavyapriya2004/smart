@@ -1,0 +1,91 @@
+/* Full page background */
+.login-bg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/university-student.jpg") no-repeat center center/cover;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Login box styling */
+.login-box {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px 25px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.login-logo {
+  width: 300px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+/* Heading */
+.login-box h2 { 
+  margin-bottom: 20px; 
+  color: #7d08ea;
+  font-size: 22px;
+}
+
+/* Select dropdown */
+.login-box select {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Input fields */
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Login button */
+.login-box button {
+  width: 60%;
+  padding: 10px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #123bcc;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover effect */
+.login-box button:hover {
+  background: #0a27a1;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 400px) {
+  .login-box {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .login-box select,
+  .login-box input,
+  .login-box button {
+    width: 95%;
+  }
+  
+  .login-logo {
+    width: 80px;
+  }
+}

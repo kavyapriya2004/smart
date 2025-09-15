@@ -1,0 +1,118 @@
+.staff-container {
+  font-family: 'Segoe UI', Arial, sans-serif;
+ background: linear-gradient(to right, #bfdcef, #d371eee6);
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Logout button */
+.logout-btn {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.logout-btn button {
+  padding: 5px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #1d3557;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Page Title */
+h2 {
+  text-align: center;
+  color: #1d3557;
+  margin-bottom: 20px;
+}
+
+/* Container for profile + materials */
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+/* Flex row for profile & materials */
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.info, .materials {
+  flex: 1;
+  min-width: 250px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+/* Profile image */
+.info img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1d3557;
+}
+
+/* Text styling */
+p {
+  margin: 6px 0;
+  color: #333;
+  font-size: 14px;
+}
+b {
+  color: #1d3557;
+}
+
+/* List styles */
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #1d3557;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Events section */
+.events {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f7ff;
+  border-left: 5px solid #1d3557;
+  border-radius: 10px;
+}
+.events h3 {
+  margin-bottom: 10px;
+  color: #1d3557;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+  .info, .materials {
+    min-width: 100%;
+  }
+  .info img {
+    width: 120px;
+    height: 120px;
+  }
+}

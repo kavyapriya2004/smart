@@ -1,0 +1,110 @@
+/* Body background */
+body {
+  background: linear-gradient(to right, #bfdcef, #d371eee6);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for student info */
+.student-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Toggle button */
+.toggle-btn {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #1d3557;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.toggle-btn:hover {
+  background: #163048;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px white
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background-color: #00dbf8b3;
+  color: #0a0a0a;
+}
+
+.tp {
+  background-color: #00dbf8b3;
+  color: #0a0a0a;
+}
+
+.paid {
+  background-color: rgb(28, 245, 28, 0.7);
+  font-weight: bold;
+  color: white;
+}
+
+.not {
+  background-color: rgb(244, 97, 97, 0.7);
+  font-weight: bold;
+  color: white;
+}
+
+/* Info card */
+.info {
+  text-align: justify;
+  background-color: rgb(206, 226, 233);
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  
+}
+
+/* Details section */
+.details {
+  margin: 20px 0;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .student-container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  th, td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .toggle-btn {
+    font-size: 14px;
+  }
+}
